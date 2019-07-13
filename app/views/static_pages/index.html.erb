@@ -4,6 +4,17 @@
     </header>
 
     <section class="main">
+        <ul class="todo list">
+
+        </ul>
 
     </section>
 </section>
+
+<script>
+    $(function() {
+        $.get("/tasks").success( function( data ) {
+            console.log(data);
+        });
+    });
+</script>

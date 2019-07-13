@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'factory_bot.rb'
 
 RSpec.describe TasksController, type: :controller do
   describe "tasks#index" do
