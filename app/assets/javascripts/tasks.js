@@ -31,7 +31,10 @@ $(function() {
           done: doneValue
         }
       }).success(function(data) {
-        console.log(data);
+        var liHtml = taskHtml(data);
+        var $li = $("#listItem-" + data.id);
+        $li.replaceWith(liHtml);
+        $('.toggle').change(toggleTask);
       } );
     }
   
