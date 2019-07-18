@@ -12,6 +12,7 @@
 //
 //= require jquery3
 //= require jquery_ujs
+//= require bootstrap-sprockets
 //= require activestorage
 //= require_tree .
-//= require bootstrap/dist/js/bootstrap
+
