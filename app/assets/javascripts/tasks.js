@@ -38,7 +38,7 @@ $(function() {
       } );
     }
   
-    $.get("/tasks").success( function( data ) {
+    $.get("/tasks").done(function (data){
       var htmlString = "";
   
       $.each(data, function(index,  task) {
@@ -60,7 +60,7 @@ $(function() {
           title: textbox.val()
         }
       };
-      $.post("/tasks", payload).success(function(data) {
+      $.post("/tasks", payload).done(function(data) {
         var htmlString = taskHtml(data);
         var ulTodos = $('.todo-list');
         ulTodos.append(htmlString);
